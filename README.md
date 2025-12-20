@@ -39,52 +39,64 @@ Compared one-way ANOVA with multiple pairwise t-tests using simulated normal dat
 
 ## Setup
 
-### Prerequisites
-- Python **3.9+** recommended
-- `pip` available on your system
+You can run the notebook locally using Visual Studio Code or directly in the browser using GitHub Codespaces.
 
-### Clone the Repository
+### Option 1: Run Locally with Visual Studio Code
+
+1. Install:
+   - **Python 3.9+**
+   - **Visual Studio Code**
+   - The VS Code **Python** and **Jupyter** extensions
+
+2. Clone the Repository
 ```bash
 git clone <https://github.com/aoifeflav/applied_statistics.git>
 cd <applied_statistics>
 ```
 
 
-### Install Dependencies
+3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
+4. Open the repository in Visual Studio Code:
+   ```bash
+   code .
+   ```
+
+5. Open the notebook (`.ipynb`) file and run cells interactively inside VS Code.
+
 ---
 
-## Running the Notebook
+### Option 2: Run in GitHub Codespaces (No Local Setup)
 
-Start Jupyter:
-```bash
-jupyter notebook
-```
+1. Navigate to the repository on GitHub.
+2. Click **Code → Codespaces → Create codespace on main**.
+3. Once the Codespace loads, open a terminal and install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Open the notebook file and run it directly in the browser.
 
-Then open:
-- `problems.ipynb`
-
-Run cells from top to bottom to reproduce the results.
+> **Note:** GitHub Codespaces provides a preconfigured Linux environment with Python installed, allowing the notebook to be run without any local setup.
 
 ---
 
 ## Data and Assets
 
 
-This repository contains only the notebook. The computations do not rely on external datasets stored in the repository.
+This repository contains only the notebook and a requirements.txt file. The computations do not rely on external datasets stored in the repository.
 
 ---
 
 ## Technologies Used
 
-- **Jupyter Notebook** – interactive analysis environment  
-- **NumPy** – numerical computing  
-- **Pandas** – data manipulation  
-- **Matplotlib** and **Seaborn** – visualisation  
-- **SciPy** – statistical functions  
+- [**Jupyter Notebook**](https://jupyter.org/) – interactive analysis environment  
+- [**NumPy**](https://numpy.org/) – numerical computing  
+- [**Pandas**](https://pandas.pydata.org/) – data manipulation  
+- [**Matplotlib**](https://matplotlib.org/) and [**Seaborn**](https://seaborn.pydata.org/) – visualisation  
+- [**SciPy**](https://scipy.org/) – statistical functions  
 
 ---
 
@@ -96,5 +108,15 @@ This repository contains only the notebook. The computations do not rely on exte
   pip freeze > requirements.txt
   ```
 - This ensures consistent results across different systems
+
+---
+
+## Sources
+
+A variety of resources were used in completing this coursework. I relied primarily on the module lecture videos and lecture notes when developing solutions to the problems. In addition, I made extensive use of the official documentation for the [Python](https://docs.python.org/3/) libraries used throughout the notebook.
+
+Several online resources were also helpful for reference and clarification, including [GeeksforGeeks](https://www.geeksforgeeks.org/), [W3Schools](https://www.w3schools.com/), [DataCamp](https://www.datacamp.com/), [Wikipedia](https://www.datacamp.com/), and similar educational websites. I also used [YouTube](https://www.youtube.com/) videos to help build intuition around more challenging statistical concepts.
+
+[ChatGPT](https://chatgpt.com/) was used throughout the project as a support tool, primarily for debugging code, clarifying concepts, and assisting with formatting and presentation of the Jupyter notebook and this README.
 
 ---
